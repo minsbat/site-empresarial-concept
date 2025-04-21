@@ -7,17 +7,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <div class="buttonsNavDiv">
-            <a role="button" href="" class="navImage"><img class="navImage" src="img/R.png" alt="">  </a>    
-            <a role="button" href="" class="menuLink">Início</a>    
-            <a role="button" href="" class="menuLink">Produtos</a>
-            <a role="button" href="" class="menuLink">Novidades</a>
-            <a role="button" href="" class="menuLink">Sobre</a>
-            <a role="button" href="" class="menuLink">Contato</a>
+            <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt="">  </a>    
+            <a role="button" href="../index.html" class="menuLink">Início</a>    
+            <a role="button" href="pages/products.html" class="menuLink">Produtos</a>
+            <a role="button" href="pages/news.html" class="menuLink">Novidades</a>
+            <a role="button" href="pages/about.html" class="menuLink">Sobre</a>
+            <a role="button" href="pages/contact.html" class="menuLink">Contato</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                <i id="mobileBars" class="fa fa-bars"></i>
+            </a>
         </div>
     </nav>
     <main>
@@ -55,5 +60,7 @@
             <a class="ftrBTN"href="#">Conheça mais sobre a empresa</a>
         </div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
