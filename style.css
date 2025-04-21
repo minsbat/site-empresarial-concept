@@ -6,15 +6,15 @@
     font-variation-settings:
       "wdth" 100;
   }
-
 body{
+    --bgcolor: rgb(238, 238, 238);
     font-family: "Noto Sans", sans-serif;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: var(--bgcolor);
     height: 100%;
     max-width: 100vw;
     max-height: 100vh;
@@ -25,7 +25,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(#ff7a7a, lightgray);
+    background-color: white;
     width: 100%;
     height: 100%;
 }
@@ -44,7 +44,13 @@ body{
     width: 4rem;
 }
 
-
+.respButtons{
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
 footer {
     display: flex;
     justify-content: center;
@@ -63,7 +69,6 @@ footer {
         transform: rotate(360deg);
     }
 }
-
 #mobileBars {
     color: black;
 }
@@ -79,7 +84,7 @@ footer {
 
 .menuLink:hover {
     text-decoration: underline;
-    text-underline-offset: 2rem;
+    text-underline-offset: 1.6rem;
     text-decoration-thickness: 0.2rem;
 }
 
@@ -111,7 +116,7 @@ footer {
 .buttonCard {
     outline: none;
     font-size: 1rem;
-    background-color: lightgray;
+    background-color: var(--bgcolor);
     padding: 0.5rem 6rem;
     border: 2px solid black;
     border-radius: 4rem;
@@ -119,7 +124,7 @@ footer {
 }
 
 .buttonCard:hover {
-    background-color: darkgray;
+    background-color: lightgray;
 }
 
 .card01 {
@@ -150,21 +155,67 @@ footer {
     opacity: 100%;
 }
 
+body:has(.mobileactive) {
+    overflow: hidden;
+}
+
+body:has(.mobileactive) .buttonsNavDiv {
+    display: flex;
+}
+#mobileX {
+    display: none;
+}
+body:has(.mobileactive) #mobileX {
+    display: block;
+        position: absolute;
+        right: 10rem;
+        top: 7rem;
+}
+
+.hrNavMob{
+    display: none;
+}
+body:has(.mobileactive) .hrNavMob {
+    display: flex;
+}
+body:has(.mobileactive) .navmobFooterDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navmobFooterDiv{
+    display: none;
+}
+body:has(.mobileactive) .navmobFooter {
+    width: 20rem;
+}
+
 @media (max-width: 1000px) {
     .buttonsNavDiv {
+        position: fixed;
+        inset: 0;
+        background-color: white;
         display: none;
-        gap: 0;
+        gap: 2rem;
+        padding: min(10rem, 10%);
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-
+        justify-content: center;
+        align-items: flex-start;
     }
+
     .navBar.mobileactive{
         height: 100%;
     }
+
+    .navBar{
+        gap: 50%;
+    }
+
     #mobilenavbtn{
         display: block;
     }
+
     .menuLink:hover {
         text-decoration: underline;
         text-underline-offset: 0.2rem;
