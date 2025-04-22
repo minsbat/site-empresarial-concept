@@ -6,6 +6,8 @@
     font-variation-settings:
       "wdth" 100;
   }
+
+
 body{
     --bgcolor: rgb(238, 238, 238);
     font-family: "Noto Sans", sans-serif;
@@ -41,7 +43,7 @@ body{
 }
 
 .navImage{
-    width: 4rem;
+    height: 4rem;
 }
 
 .respButtons{
@@ -50,6 +52,7 @@ body{
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    color: black;
 }
 footer {
     margin-top: auto;
@@ -178,7 +181,7 @@ body:has(.loading) {
 
 .footerIMG{
     padding: 50px;
-    width: 50rem;
+    height: 5rem;
 }
 
 .footerBtns{
@@ -234,6 +237,64 @@ body:has(.mobileactive) .navmobFooterDiv {
 body:has(.mobileactive) .navmobFooter {
     width: 20rem;
 }
+@media (max-width: 1280px){
+    html {
+        font-size: 14px;
+    }
+    body:has(.mobileactive) #mobileX {
+        display: block;
+            position: absolute;
+            right: 10rem;
+            top: 11rem;
+    }
+  }
+
+  @media (max-width: 720px){
+    html {
+        font-size: 12px;
+    }
+    .prodCard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .prodCard:nth-of-type(3){
+        flex-direction: column-reverse;
+    }
+    .prodCard > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .prodCard > img{
+        width: 100%;
+    }
+    .menuLink{
+        font-size: 20px;
+    }
+    body:has(.mobileactive) #mobileX {
+        display: block;
+            position: absolute;
+            right: 10rem;
+            top: 14rem;
+    }
+    .navImage{
+        height: 5rem;
+    }
+    .respButtons{
+        font-size: 24px;
+    }
+  }
+  @media (max-width: 500px){
+    html {
+        font-size: 10px;
+    }
+    body:has(.mobileactive) #mobileX {
+        display: block;
+            position: absolute;
+            right: 10rem;
+            top: 20rem;
+    }
+  }
 
 @media (max-width: 1000px) {
     .buttonsNavDiv {
@@ -253,7 +314,7 @@ body:has(.mobileactive) .navmobFooter {
     }
 
     .navBar{
-        gap: 50%;
+        gap: 60%;
     }
 
     #mobilenavbtn{
