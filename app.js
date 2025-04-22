@@ -14,7 +14,7 @@ function closeMobileMenu(){
 setTimeout(() => {
     const loading = document.querySelector(".LoadingScreen")
     loading.classList.remove("loading")
-}, 0)
+}, 3500)
 
 // Get when media query changes
 
