@@ -13,7 +13,7 @@ function closeMobileMenu(){
 // Loading Screen Ficticious Time of Loading
 setTimeout(() => {
     const loading = document.querySelector(".LoadingScreen")
-    loading.classList.remove("loading")
+    loading.remove()
 }, 3500)
 
 // Get when media query changes
