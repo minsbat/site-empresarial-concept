@@ -16,9 +16,9 @@ body{
     flex-direction: column;
     background-color: var(--bgcolor);
     height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
+    min-height: 100vh;
 }
+
 
 .navBar {
     outline: none;
@@ -52,6 +52,7 @@ body{
     cursor: pointer;
 }
 footer {
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +95,49 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: 6rem;
+}
+.LoadingScreen.loading {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgcolor);
+    width: 100vw;
+    height: 100vh;
+}
+
+body:has(.loading) {
+    overflow: hidden;
+}
+
+.LoadingScreen{
+    display: none;
+}
+
+@keyframes path-line {
+    0% {
+      stroke-dashoffset: 1;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      fill: red;
+    }
+  } 
+
+.LoadingScreen svg {
+    height: 12rem;
+
+}
+
+.LoadingScreen svg path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+    stroke: red;
+    fill: transparent;
+    stroke-width: 2;
+    animation: path-line 2000ms ease-in-out infinite;
 }
 
 .mainImage{
