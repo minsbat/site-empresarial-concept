@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <?php include '../script/products.php'; ?>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         </style>
@@ -17,7 +16,7 @@
         <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt="">  </a> 
         <div class="buttonsNavDiv" id="mobilenav">   
             <a role="button" href="../index.html" class="menuLink">Início</a>    
-            <a role="button" href="products.html" class="menuLink">Produtos</a>
+            <a role="button" href="productPage.php" class="menuLink">Produtos</a>
             <a role="button" href="news.html" class="menuLink">Novidades</a>
             <a role="button" href="about.html" class="menuLink">Sobre</a>
             <a role="button" href="contact.html" class="menuLink">Contato</a>
@@ -33,8 +32,27 @@
                 <i class="fa fa-bars"></i>
             </button>
     </nav>
-
-
+    <main style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <a href="registerProd.php"><button type="button" class="createProduct">Criar produto</button></a>
+            <?php
+              if(file_exists("../script/DB/products.txt")) {
+                  $lines = file("../script/DB/products.txt");
+                  echo "<div class='container'>";
+                  foreach($lines as $line) {
+                      list($name, $price, $stock, $qnt, $img) = explode("|", trim($line));
+                      echo "<div class='productCard'>
+                      <img id='pdimg' src='$img' alt='$name'>
+                        <p>$name</p>
+                        <p>Qtde. $qnt</p>
+                        <p>$stock Em estoque</p>
+                        <p>R$ $price</p>
+                        </div>";
+                  } echo "</div>";
+                  } else {
+                        echo "<p>Nenhum produto encontrado.</p>";
+                  }
+            ?>
+    </main>
     <footer>
         <img class="footerIMG" src="img/cocacompany.png" alt="">
         <hr style="color: white; width: 80%;">

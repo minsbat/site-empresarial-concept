@@ -1,3 +1,5 @@
+
+
 .noto-sans-oie {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
@@ -156,6 +158,7 @@ body:has(.loading) {
     align-items: flex-start;
     flex-direction: row;
 }
+
 .labelCard{
     font-size: 3rem;
     font-weight: 600;
@@ -164,6 +167,7 @@ body:has(.loading) {
 .buttonCard {
     outline: none;
     font-size: 1rem;
+    color: black;
     background-color: var(--bgcolor);
     padding: 0.5rem 6rem;
     border: 2px solid black;
@@ -327,4 +331,102 @@ body:has(.mobileactive) .navmobFooter {
         text-underline-offset: 0.2rem;
         text-decoration-thickness: 0.2rem;
     }
+}
+
+.formContainer {
+    display: flex;
+    color: white;
+    margin-block: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 7rem;
+    border-radius: 1rem;
+    background-color: firebrick;
+}
+.formContainer > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formContainer > form > input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.formContainer > form > input::-webkit-file-upload-button{
+    outline: none;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 25rem;
+    margin-block: 4rem;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.container > .productCard {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 13rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.7rem black;
+}
+.container > .productCard > img {
+    border-radius: 0.4rem;
+    object-fit: contain;
+    width: 13rem;
+    height: 11rem;
+}
+.createProduct {
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    background-color: firebrick;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.createProduct:hover {
+    background-color: #571111;
+    cursor: pointer;
+}
+
+.productCard > p:nth-of-type(1) {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+    margin-top: 0.6rem;
+}
+.productCard > p:nth-of-type(2) {
+    margin-top: 0.1rem;
+    opacity: 40%;
+}
+.productCard > p:nth-of-type(3) {
+    margin-top: 0.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.productCard > p:nth-of-type(4) {
+    font-weight: 600;
+    font-size: 2rem;
 }
