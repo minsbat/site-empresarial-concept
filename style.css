@@ -20,6 +20,7 @@ body{
     flex-direction: column;
     background-color: var(--bgcolor);
     height: 100%;
+    overflow-x: hidden;
     min-height: 100vh;
 }
 
@@ -32,6 +33,7 @@ body{
     background-color: white;
     width: 100%;
     height: 100%;
+    padding: 0.5rem;
 }
 
 #mobilenavbtn{
@@ -58,6 +60,7 @@ body{
 }
 footer {
     margin-top: auto;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,6 +362,21 @@ body:has(.mobileactive) .navmobFooter {
     outline: none;
     font-size: 1rem;
 }
+.formContainer > form > button {
+    outline: none;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.formContainer > form > button:hover {
+    background-color: var(--bgcolor);
+    cursor: pointer;
+}
+
 
 .formContainer > form > input::-webkit-file-upload-button{
     outline: none;
@@ -366,7 +384,13 @@ body:has(.mobileactive) .navmobFooter {
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: white;
+    cursor: pointer;
 }
+.formContainer > form > input::-webkit-file-upload-button:hover{
+    background-color: var(--bgcolor);
+}
+
+
 
 .container {
     display: flex;

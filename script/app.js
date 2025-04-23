@@ -1,20 +1,26 @@
-
 //Toggle on mobile menu
-function toggleMobileMenu(){
+function toggleMobileMenu() {
     const navBar = document.querySelector(".navBar")
     navBar.classList.add("mobileactive")
 }
+
 // Toggle off mobile menu
-function closeMobileMenu(){
+function closeMobileMenu() {
     const navBar = document.querySelector(".navBar")
     navBar.classList.remove("mobileactive")
 }
 
 // Loading Screen Ficticious Time of Loading
-setTimeout(() => {
+if (!sessionStorage.getItem('shownLoading')) {
+    setTimeout(() => {
+        const loading = document.querySelector(".LoadingScreen")
+        loading.remove()
+        sessionStorage.setItem('shownLoading', 'true')
+    }, 3500)
+} else {
     const loading = document.querySelector(".LoadingScreen")
     loading.remove()
-}, 3500)
+}
 
 // Get when media query changes
 
@@ -22,5 +28,5 @@ const mqc = window.matchMedia("(max-width: 1000px)")
 
 mqc.onchange = () => {
     const navBar = document.querySelector(".navBar")
-    if(navBar.classList.value == "navBar mobileactive") navBar.classList.remove("mobileactive")
+    if (navBar.classList.value === "navBar mobileactive") navBar.classList.remove("mobileactive")
 }

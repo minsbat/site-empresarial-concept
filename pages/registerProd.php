@@ -25,17 +25,16 @@
         </button>
         <hr class="hrNavMob" style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
         <div class="navmobFooterDiv">
-            <img class="navmobFooter" src="img/cocacompany.png" alt="The Coca Cola Company Logo" >
+            <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo" >
         </div>
     </div>
     <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
         <i class="fa fa-bars"></i>
     </button>
 </nav>
-
     <div class="formContainer">
         <h1>Registrar Produto</h1>
-        <form action="../script/products.php" method="POST" enctype="multipart/form-data">
+        <form action="../script/products.php" method="POST" enctype="multipart/form-data" autocomplete="off">
             <label for="name">Nome do Produto:</label>
             <input type="text" id="name" name="name" placeholder="Nome do produto" required><br>
 
@@ -45,24 +44,23 @@
                 <label for="price">Preço:</label>
                 <input type="number" id="price" name="price" step="0.01" placeholder="Preço" required><br>
 
-                <label for="qnt">Quantidade:</label>
-                <input type="text" id="qnt" name="qnt" placeholder="Quantidade" required><br>
+                <label for="qnt">Conteúdo:</label>
+                <input type="text" id="qnt" name="qnt" placeholder="Conteúdo do produto" required><br>
 
             <label for="image">Imagem:</label>
-            <input type="file" id="image" name="image" required><br>
+            <input type="file" id="image" name="image" accept="image/png" required><br>
 
             <button type="submit">Registrar Produto</button>
         </form>
     </div>
-
 <footer>
-    <img class="footerIMG" src="img/cocacompany.png" alt="">
+    <img class="footerIMG" src="../img/cocacompany.png" alt="">
     <hr style="color: white; width: 80%;">
     <h2>Volte sempre para abrir a porta da felicidade. A Coca-Cola agradece!</h2>
     <hr style="color: white; width: 80%;">
     <div class="footerBtns">
         <a class="ftrBTN" href="#">Política de privacidade</a>
-        <a class="ftrBTN"href="contact.html">Viu algo errado? Nos contacte</a>
+        <a class="ftrBTN" href="contact.html">Viu algo errado? Contate-nos</a>
         <a class="ftrBTN"href="about.html">Conheça mais sobre a empresa</a>
     </div>
 </footer>
