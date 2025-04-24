@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.playarena.me/FontAwesome/css/all.css">
-        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-        <title>Coca-Cola: A porta da felicidade</title>
-    </head>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.playarena.me/FontAwesome/css/all.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Coca-Cola: A porta da felicidade</title>
+</head>
 <body>
 <nav class="navBar" id="navBar">
-        <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt="">  </a> 
-        <div class="buttonsNavDiv" id="mobilenav">   
-            <a role="button" href="../index.html" class="menuLink">Início</a>    
-            <a role="button" href="productPage.php" class="menuLink">Produtos</a>
-            <a role="button" href="news.html" class="menuLink">Novidades</a>
-            <a role="button" href="about.html" class="menuLink">Sobre</a>
-            <a role="button" href="contact.html" class="menuLink">Contato</a>
-            <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
-                <i class="fa-solid fa-x"></i>
-            </button>
-            <hr class="hrNavMob" style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
-            <div class="navmobFooterDiv">
-                <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo" >
+    <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt=""> </a>
+    <div class="buttonsNavDiv" id="mobilenav">
+        <a role="button" href="../index.html" class="menuLink">Início</a>
+        <a role="button" href="productPage.php" class="menuLink">Produtos</a>
+        <a role="button" href="news.html" class="menuLink">Novidades</a>
+        <a role="button" href="about.html" class="menuLink">Sobre</a>
+        <a role="button" href="contact.html" class="menuLink">Contato</a>
+        <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
+            <i class="fa-solid fa-x"></i>
+        </button>
+        <hr class="hrNavMob"
+            style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
+        <div class="navmobFooterDiv">
+            <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo">
+        </div>
+    </div>
+    <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+    </button>
+</nav>
+<main class="mainAbout">
+    <div class="aboutIMG">
+        <div class="overText">QUEM SOMOS?</div>
+        <img src="../img/novidades.webp" alt="">
+    </div>
+    <div class="aboutText">
+        <p>A Coca-Cola é uma das marcas mais reconhecidas do mundo, com uma história rica que remonta a 1886. Desde
+            então, a empresa tem se dedicado a oferecer bebidas refrescantes e inovadoras para seus consumidores.</p>
+        <p>Com um portfólio diversificado de produtos, incluindo refrigerantes, sucos e águas, a Coca-Cola continua a
+            evoluir e se adaptar às necessidades dos consumidores modernos.</p>
+        <p>Além disso, a empresa está comprometida com práticas sustentáveis e responsabilidade social, buscando sempre
+            fazer a diferença nas comunidades onde atua.</p>
+    </div>
+    <div class="pourpose">
+            <img class="card01" src="../img/width1960.webp" alt="">
+            <div>
+                <h1>Nosso Propósito é Refrescar o Mundo e Fazer a Diferença.</h1>
+                <p>A Coca-Cola tem como propósito refrescar o mundo,<br> inspirar momentos de otimismo e felicidade, e criar valor fazendo a diferença.</p>
             </div>
+    </div>
+    <div class="pourposeLeft">
+        <img class="card01" src="../img/width19602.webp" alt="">
+        <div>
+            <h1>Empresa Total de Bebidas</h1>
+            <p>Nosso portfólio de bebidas se expandiu para mais de 200 marcas e milhares de bebidas ao redor do mundo, desde refrigerantes e águas até cafés e chás. Saiba mais sobre nossas marcas e nosso compromisso com produtos de qualidade.</p>
         </div>
-            <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </button>
-    </nav>
+    </div>
+    <div class="pourpose">
+        <img class="card01" src="../img/width196023.webp" alt="">
+        <div>
+            <h1>Nossas Pessoas São Tão Diversas Quanto Nossas Comunidades</h1>
+            <p>Junto com nossos parceiros engarrafadores, empregamos mais de 700.000 pessoas, ajudando a trazer oportunidade econômica para comunidades locais em todo o mundo. éticas.</p>
+        </div>
+    </div>
+    <div class="pourposeLeft">
+        <img class="card01" src="../img/width196024.webp" alt="">
+        <div>
+            <h1>O Sistema Coca‑Cola .</h1>
+            <p>Engarrafadores locais trabalham conosco para levar nossas bebidas da marca Coca‑Cola para onde quer que você esteja no mundo. Mais de 225 parceiros engarrafadores compõem o sistema Coca‑Cola e nos ajudam a fornecer bebidas globalmente.</p>
+        </div>
+    </div>
 
-    <footer>
-        <img class="footerIMG" src="../img/cocacompany.png" alt="">
-        <hr style="color: white; width: 80%;">
-        <h2>Volte sempre para abrir a porta da felicidade. A Coca-Cola agradece!</h2>
-        <hr style="color: white; width: 80%;">
-        <div class="footerBtns">
-            <a class="ftrBTN" href="#">Política de privacidade</a>
-            <a class="ftrBTN" href="contact.html">Viu algo errado? Contate-nos</a>
-            <a class="ftrBTN"href="about.html">Conheça mais sobre a empresa</a>
-        </div>
-    </footer>
-    <script src="../script/app.js"></script>
+</main>
+<footer>
+    <img class="footerIMG" src="../img/cocacompany.png" alt="">
+    <hr style="color: white; width: 80%;">
+    <h2>Volte sempre para abrir a porta da felicidade. A Coca-Cola agradece!</h2>
+    <hr style="color: white; width: 80%;">
+    <div class="footerBtns">
+        <a class="ftrBTN" href="#">Política de privacidade</a>
+        <a class="ftrBTN" href="contact.html">Viu algo errado? Contate-nos</a>
+        <a class="ftrBTN" href="about.html">Conheça mais sobre a empresa</a>
+    </div>
+</footer>
+<script src="../script/app.js"></script>
 </body>
 </html>

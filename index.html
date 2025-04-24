@@ -26,14 +26,20 @@
 <nav class="navBar" id="navBar">
     <a role="button" href="" class="navImage"><img class="navImage" src="img/R.png" alt=""> </a>
     <div class="buttonsNavDiv" id="mobilenav">
-        <a role="button" href="index.html" class="menuLink">Início</a>
-        <a role="button" href="pages/productPage.php" class="menuLink">Produtos</a>
-        <a role="button" href="pages/news.html" class="menuLink">Novidades</a>
-        <a role="button" href="pages/about.html" class="menuLink">Sobre</a>
-        <a role="button" href="pages/contact.html" class="menuLink">Contato</a>
-        <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
-            <i class="fa-solid fa-x"></i>
-        </button>
+        <div class="rowsNavMobile">
+            <div class="buttonsNavCol">
+                <a role="button" href="index.html" class="menuLink">Início</a>
+                <a role="button" href="pages/productPage.php" class="menuLink">Produtos</a>
+                <a role="button" href="pages/news.html" class="menuLink">Novidades</a>
+                <a role="button" href="pages/about.html" class="menuLink">Sobre</a>
+                <a role="button" href="pages/contact.html" class="menuLink">Contato</a>
+            </div>
+            <div class="XNavRow">
+                <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+        </div>
         <hr class="hrNavMob"
             style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
         <div class="navmobFooterDiv">
@@ -57,9 +63,9 @@
     </div>
 
     <div class="prodCard">
-        <img class="card01" src="img/products.jpg" alt="">
+        <img class="card01" id="card" src="img/products.jpg" alt="">
         <div>
-            <label class="labelCard" for="card01">Conheça nossos produtos</label>
+            <label class="labelCard" for="card">Conheça nossos produtos</label>
             <p class="paragraphCard">Descubra o merchandising oficial na Loja <br> Coca‑Cola. Uma coleção única para
                 você celebrar a <br>s sua conexão com a felicidade!</p>
             <a href="pages/productPage.php">
@@ -69,14 +75,14 @@
     </div>
     <div class="prodCard">
         <div>
-            <label class="labelCard" for="card01">Fique por dentro das novidades</label>
+            <label class="labelCard" for="card2">Fique por dentro das novidades</label>
             <p class="paragraphCard">Descubra todas as ações que a Coca‑Cola vem <br> fazendo e mudando no mundo
                 inteiro.</p>
             <a href="pages/news.html">
                 <button type="button" class="buttonCard">Veja mais</button>
             </a>
         </div>
-        <img class="card01" src="img/novidades.jpg" alt="">
+        <img class="card01" id="card2" src="img/novidades.jpg" alt="">
     </div>
 </main>
 

@@ -1,16 +1,14 @@
 
-
 .noto-sans-oie {
     font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 10;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+    font-variation-settings: "wdth" 100;
+}
 
 
-body{
+body {
     --bgcolor: rgb(238, 238, 238);
     font-family: "Noto Sans", sans-serif;
     padding: 0;
@@ -36,7 +34,7 @@ body{
     padding: 0.5rem;
 }
 
-#mobilenavbtn{
+#mobilenavbtn {
     display: none;
 }
 
@@ -46,11 +44,11 @@ body{
     align-items: center;
 }
 
-.navImage{
+.navImage {
     height: 4rem;
 }
 
-.respButtons{
+.respButtons {
     outline: none;
     background: none;
     border: none;
@@ -58,6 +56,7 @@ body{
     cursor: pointer;
     color: black;
 }
+
 footer {
     margin-top: auto;
     text-align: center;
@@ -70,17 +69,20 @@ footer {
     width: 100%;
     height: fit-content;
 }
+
 @keyframes rotateCan {
     0% {
         transform: rotate(0deg);
-    } 
+    }
     100% {
         transform: rotate(360deg);
     }
 }
+
 #mobileBars {
     color: black;
 }
+
 .navImage:hover {
     animation: rotateCan 2s;
     transform-origin: center center;
@@ -89,7 +91,7 @@ footer {
 .menuLink {
     margin: 1rem;
     text-decoration: none;
-    color:black; 
+    color: black;
 }
 
 .menuLink:hover {
@@ -105,6 +107,7 @@ footer {
     flex-direction: column;
     padding: 6rem;
 }
+
 .LoadingScreen.loading {
     position: fixed;
     inset: 0;
@@ -120,20 +123,20 @@ body:has(.loading) {
     overflow: hidden;
 }
 
-.LoadingScreen{
+.LoadingScreen {
     display: none;
 }
 
 @keyframes path-line {
     0% {
-      stroke-dashoffset: 1;
-      fill: transparent;
+        stroke-dashoffset: 1;
+        fill: transparent;
     }
     100% {
-      stroke-dashoffset: 0;
-      fill: red;
+        stroke-dashoffset: 0;
+        fill: red;
     }
-  } 
+}
 
 .LoadingScreen svg {
     height: 12rem;
@@ -149,11 +152,11 @@ body:has(.loading) {
     animation: path-line 2000ms ease-in-out infinite;
 }
 
-.mainImage{
+.mainImage {
     width: 35rem;
 }
 
-.prodCard{
+.prodCard {
     padding: 5rem;
     display: flex;
     gap: 4rem;
@@ -162,11 +165,12 @@ body:has(.loading) {
     flex-direction: row;
 }
 
-.labelCard{
+.labelCard {
     font-size: 3rem;
     font-weight: 600;
 
 }
+
 .buttonCard {
     outline: none;
     font-size: 1rem;
@@ -187,12 +191,12 @@ body:has(.loading) {
     border-radius: 2rem;
 }
 
-.footerIMG{
+.footerIMG {
     padding: 50px;
     height: 5rem;
 }
 
-.footerBtns{
+.footerBtns {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,92 +221,108 @@ body:has(.mobileactive) {
 body:has(.mobileactive) .buttonsNavDiv {
     display: flex;
 }
+
 #mobileX {
     display: none;
 }
+
 body:has(.mobileactive) #mobileX {
-    display: block;
-        position: absolute;
-        right: 10rem;
-        top: 7rem;
+    display: flex;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
 }
 
-.hrNavMob{
+body:has(.mobileactive) .rowsNavMobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+body:has(.mobileactive) .XNavRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+body:has(.mobileactive) .buttonsNavCol {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.hrNavMob {
     display: none;
 }
+
 body:has(.mobileactive) .hrNavMob {
     display: flex;
 }
+
 body:has(.mobileactive) .navmobFooterDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.navmobFooterDiv{
+
+.navmobFooterDiv {
     display: none;
 }
+
 body:has(.mobileactive) .navmobFooter {
     width: 20rem;
 }
-@media (max-width: 1280px){
+
+@media (max-width: 1280px) {
     html {
         font-size: 14px;
     }
-    body:has(.mobileactive) #mobileX {
-        display: block;
-            position: absolute;
-            right: 10rem;
-            top: 11rem;
-    }
-  }
+}
 
-  @media (max-width: 720px){
+@media (max-width: 720px) {
     html {
         font-size: 12px;
     }
+
     .prodCard {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .prodCard:nth-of-type(3){
+
+    .prodCard:nth-of-type(3) {
         flex-direction: column-reverse;
     }
-    .prodCard > div{
+
+    .prodCard > div {
         display: flex;
         flex-direction: column;
     }
-    .prodCard > img{
+
+    .prodCard > img {
         width: 100%;
     }
-    .menuLink{
+
+    .menuLink {
         font-size: 20px;
     }
-    body:has(.mobileactive) #mobileX {
-        display: block;
-            position: absolute;
-            right: 10rem;
-            top: 14rem;
-    }
-    .navImage{
+
+    .navImage {
         height: 5rem;
     }
-    .respButtons{
+
+    .respButtons {
         font-size: 24px;
     }
-  }
-  @media (max-width: 500px){
+}
+
+@media (max-width: 500px) {
     html {
         font-size: 10px;
     }
-    body:has(.mobileactive) #mobileX {
-        display: block;
-            position: absolute;
-            right: 10rem;
-            top: 20rem;
-    }
-  }
+}
 
 @media (max-width: 1000px) {
     .buttonsNavDiv {
@@ -317,15 +337,15 @@ body:has(.mobileactive) .navmobFooter {
         align-items: flex-start;
     }
 
-    .navBar.mobileactive{
+    .navBar.mobileactive {
         height: 100%;
     }
 
-    .navBar{
+    .navBar {
         gap: 60%;
     }
 
-    #mobilenavbtn{
+    #mobilenavbtn {
         display: block;
     }
 
@@ -347,6 +367,7 @@ body:has(.mobileactive) .navmobFooter {
     border-radius: 1rem;
     background-color: firebrick;
 }
+
 .formContainer > form {
     display: flex;
     justify-content: center;
@@ -362,6 +383,7 @@ body:has(.mobileactive) .navmobFooter {
     outline: none;
     font-size: 1rem;
 }
+
 .formContainer > form > button {
     outline: none;
     border: none;
@@ -378,7 +400,7 @@ body:has(.mobileactive) .navmobFooter {
 }
 
 
-.formContainer > form > input::-webkit-file-upload-button{
+.formContainer > form > input::-webkit-file-upload-button {
     outline: none;
     border: none;
     padding: 0.5rem;
@@ -386,10 +408,10 @@ body:has(.mobileactive) .navmobFooter {
     background-color: white;
     cursor: pointer;
 }
-.formContainer > form > input::-webkit-file-upload-button:hover{
+
+.formContainer > form > input::-webkit-file-upload-button:hover {
     background-color: var(--bgcolor);
 }
-
 
 
 .container {
@@ -402,6 +424,7 @@ body:has(.mobileactive) .navmobFooter {
     flex-wrap: wrap;
     gap: 4rem;
 }
+
 .container > .productCard {
     display: flex;
     justify-content: center;
@@ -413,12 +436,14 @@ body:has(.mobileactive) .navmobFooter {
     border-radius: 1rem;
     box-shadow: 0 0 0.7rem black;
 }
+
 .container > .productCard > img {
     border-radius: 0.4rem;
     object-fit: contain;
     width: 13rem;
     height: 11rem;
 }
+
 .createProduct {
     margin-top: 1rem;
     outline: none;
@@ -441,16 +466,151 @@ body:has(.mobileactive) .navmobFooter {
     margin-bottom: 0.1rem;
     margin-top: 0.6rem;
 }
+
 .productCard > p:nth-of-type(2) {
     margin-top: 0.1rem;
     opacity: 40%;
 }
+
 .productCard > p:nth-of-type(3) {
     margin-top: 0.1rem;
     font-size: 1rem;
     font-weight: 400;
 }
+
 .productCard > p:nth-of-type(4) {
     font-weight: 600;
     font-size: 2rem;
 }
+
+/* ABOUT PAGE */
+.mainAbout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 50vw;
+    width: 50rem;
+    padding: 2rem;
+}
+
+.aboutIMG {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutIMG > img {
+    border-radius: 2rem;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+}
+
+.overText {
+    backdrop-filter: brightness(0.5);
+    position: absolute;
+    display: flex;
+    top: 50%;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: black 0 0 0.5rem;
+    font-size: 3rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.aboutText {
+    width: 100%;
+    padding-top: 1rem;
+    text-align: start;
+}
+
+.pourpose {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.pourpose > img {
+    position: relative;
+    left: 2rem;
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.pourpose > div {
+    position: relative;
+    left: auto;
+    width: 25rem;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--bgcolor);
+    box-shadow: black -4px 4px 1rem;
+}
+
+.pourpose > div > h1 {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.pourpose > div > p {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.pourposeLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    position: relative;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.pourposeLeft > img {
+    position: relative;
+    right: 2rem;
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.pourposeLeft > div {
+    position: relative;
+    left: 2rem;
+    width: 25rem;
+    right: auto;
+    bottom: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--bgcolor);
+    box-shadow: black -4px 4px 1rem;
+}
+
+.pourposeLeft > div > h1 {
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.pourposeLeft > div > p {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+
