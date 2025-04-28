@@ -12,33 +12,46 @@
         <title>Coca-Cola: A porta da felicidade</title>
     </head>
 <body>
-    <nav class="navBar" id="navBar">
-        <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt="">  </a> 
-        <div class="buttonsNavDiv" id="mobilenav">   
-            <a role="button" href="../index.html" class="menuLink">Início</a>    
-            <a role="button" href="productPage.php" class="menuLink">Produtos</a>
-            <a role="button" href="news.html" class="menuLink">Novidades</a>
-            <a role="button" href="about.html" class="menuLink">Sobre</a>
-            <a role="button" href="contact.html" class="menuLink">Contato</a>
-            <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
-                <i class="fa-solid fa-x"></i>
-            </button>
-            <hr class="hrNavMob" style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
-            <div class="navmobFooterDiv">
-                <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo" >
+<nav class="navBar" id="navBar">
+    <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt=""> </a>
+    <div class="buttonsNavDiv" id="mobilenav">
+        <div class="rowsNavMobile">
+            <div class="buttonsNavCol">
+                <a role="button" href="../index.html" class="menuLink">Início</a>
+                <a role="button" href="productPage.php" class="menuLink">Produtos</a>
+                <a role="button" href="news.html" class="menuLink">Novidades</a>
+                <a role="button" href="about.html" class="menuLink">Sobre</a>
+                <a role="button" href="contact.html" class="menuLink">Contato</a>
+            </div>
+            <div class="XNavRow">
+                <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
             </div>
         </div>
-            <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
-                <i class="fa fa-bars"></i>
-            </button>
-    </nav>
-
-
+        <hr class="hrNavMob"
+            style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
+        <div class="navmobFooterDiv">
+            <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo">
+        </div>
+    </div>
+    <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
+        <i class="fa fa-bars"></i>
+    </button>
+</nav>
+    <main class="news">
+        <div class="aspartame">
+            <h1>O Aspartame da Coca-zero é prejudicial?</h1>
+            <img src="../img/cocazeroaspartame.jpeg" alt="Coca-cola Zero" title="Coca-cola Zero">
+            <p>Em julho de 2023, a Organização Mundial da Saúde (OMS) e o Comitê Conjunto de Especialistas em Aditivos Alimentares (JECFA) revisaram a segurança do aspartame, adoçante usado em produtos como Coca-Cola Zero. Apesar da Agência Internacional de Pesquisa sobre o Câncer (IARC) tê-lo classificado como "possivelmente carcinogênico" — uma categoria que também inclui coisas como aloe vera e vegetais em conserva — o JECFA reafirmou que o consumo do aspartame é seguro dentro da dose diária aceitável de 40 mg/kg de peso corporal. Isso significa que uma pessoa teria que consumir quantidades muito altas para atingir um nível preocupante. A Coca-Cola, em resposta, destacou seu compromisso com a ciência e disse que continuará usando o adoçante em seus produtos. Assim, evidências científicas mostram que o aspartame, quando consumido moderadamente, não representa risco à saúde.</p>
+            <a href="https://www.thedrinksbusiness.com/2023/07/who-re-affirms-aspartame-safe-to-drink/"><button class="buttonCard">Acesse a notícia completa</button></a>
+        </div>
+    </main>
     <footer>
         <img class="footerIMG" src="../img/cocacompany.png" alt="">
-        <hr style="color: white; width: 80%;">
+        <hr style="color: white; width: 100%;">
         <h2>Volte sempre para abrir a porta da felicidade. A Coca-Cola agradece!</h2>
-        <hr style="color: white; width: 80%;">
+        <hr style="color: white; width: 100%;">
         <div class="footerBtns">
             <a class="ftrBTN" href="#">Política de privacidade</a>
             <a class="ftrBTN" href="contact.html">Viu algo errado? Contate-nos</a>

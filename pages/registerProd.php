@@ -13,19 +13,26 @@
 </head>
 <body>
 <nav class="navBar" id="navBar">
-    <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt="">  </a>
+    <a role="button" href="" class="navImage"><img class="navImage" src="../img/R.png" alt=""> </a>
     <div class="buttonsNavDiv" id="mobilenav">
-        <a role="button" href="../index.html" class="menuLink">Início</a>
-        <a role="button" href="productPage.php" class="menuLink">Produtos</a>
-        <a role="button" href="news.html" class="menuLink">Novidades</a>
-        <a role="button" href="about.html" class="menuLink">Sobre</a>
-        <a role="button" href="contact.html" class="menuLink">Contato</a>
-        <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
-            <i class="fa-solid fa-x"></i>
-        </button>
-        <hr class="hrNavMob" style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
+        <div class="rowsNavMobile">
+            <div class="buttonsNavCol">
+                <a role="button" href="../index.html" class="menuLink">Início</a>
+                <a role="button" href="productPage.php" class="menuLink">Produtos</a>
+                <a role="button" href="news.html" class="menuLink">Novidades</a>
+                <a role="button" href="about.html" class="menuLink">Sobre</a>
+                <a role="button" href="contact.html" class="menuLink">Contato</a>
+            </div>
+            <div class="XNavRow">
+                <button class="respButtons" id="mobileX" onclick="closeMobileMenu()">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+            </div>
+        </div>
+        <hr class="hrNavMob"
+            style="width: 100%; height: 2px; border-radius: 5px; outline: none; background-color: black;">
         <div class="navmobFooterDiv">
-            <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo" >
+            <img class="navmobFooter" src="../img/cocacompany.png" alt="The Coca Cola Company Logo">
         </div>
     </div>
     <button class="respButtons" id="mobilenavbtn" onclick="toggleMobileMenu()">
@@ -55,9 +62,9 @@
     </div>
 <footer>
     <img class="footerIMG" src="../img/cocacompany.png" alt="">
-    <hr style="color: white; width: 80%;">
+    <hr style="color: white; width: 100%;">
     <h2>Volte sempre para abrir a porta da felicidade. A Coca-Cola agradece!</h2>
-    <hr style="color: white; width: 80%;">
+    <hr style="color: white; width: 100%;">
     <div class="footerBtns">
         <a class="ftrBTN" href="#">Política de privacidade</a>
         <a class="ftrBTN" href="contact.html">Viu algo errado? Contate-nos</a>

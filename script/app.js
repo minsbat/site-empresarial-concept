@@ -30,3 +30,21 @@ mqc.onchange = () => {
     const navBar = document.querySelector(".navBar")
     if (navBar.classList.value === "navBar mobileactive") navBar.classList.remove("mobileactive")
 }
+
+// disable button if inputs are invalid
+
+function sendMail() {
+    const FirstName = document.getElementById("name").value;
+    const subject = document.getElementById("subject").value;
+    const desc = document.getElementById("desc").value;
+
+    if (!FirstName || subject === "none" || !desc) {
+        alert("Preencha todos os campos");
+    } else {
+        const mailtoLink = `mailto:suporte@cocacola.com?subject=${encodeURIComponent(FirstName + " - " + subject)}&body=${encodeURIComponent(`Olá, meu nome é ${FirstName} e gostaria de falar sobre ${subject}.\nMensagem: ${desc}`)}`;
+
+        window.location.href = mailtoLink;
+}
+}
+
+
